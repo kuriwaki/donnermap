@@ -4,6 +4,7 @@
 #' @examples
 #' library(ggplot2)
 #' library(ggthemes)
+#' library(dplyr)
 #'
 #' ggplot(cd_shp) + geom_sf() + theme_map()
 #'

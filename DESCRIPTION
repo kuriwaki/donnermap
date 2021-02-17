@@ -10,7 +10,7 @@ Authors@R:
       person(given = "Daniel",
            family = "Donner",
            role = "dtc"))
-Description: Create sf and ggplot cartograms from Daniel Donner's CD shapefiles
+Description: Create sf and ggplot cartograms from Daniel Donner's CD shapefiles.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
