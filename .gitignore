@@ -3,3 +3,13 @@
 .Rdata
 .httr-oauth
 .DS_Store
+
+
+figures
+
+
+
+*.dbf
+*.prj
+*.shp
+*.shx
