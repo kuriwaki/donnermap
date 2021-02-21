@@ -1,3 +1,4 @@
+library(tidyverse)
 library(ccesMRPprep)
 
 raw_counts <- get_acs_cces(
@@ -5,13 +6,15 @@ raw_counts <- get_acs_cces(
               "C01001B_001", # black
               "C01001A_001", # white alone
               "C01001D_001", # asian
+              "C01001H_001",
               "C01001I_001")) %>% # hispanic
   transmute(
     year,
     cd,
-    race = recode(acscode,
+    race = recode_factor(acscode,
                   "B01001_001" = "Total",
-                  "C01001A_001" = "White",
+                  "C01001H_001" = "Non-Hispanic White",
+                  "C01001A_001" = "White (Including Hipanic",
                   "C01001B_001" = "Black",
                   "C01001D_001" = "Asian",
                   "C01001I_001" = "Hispanic"),
