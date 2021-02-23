@@ -29,7 +29,7 @@ devtools::install_github("kuriwaki/donner-map")
 ```
 ## Example
 
-```{r}
+```{r, message=FALSE}
 library(donnermap)
 
 # For graphing
