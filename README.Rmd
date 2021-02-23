@@ -61,7 +61,11 @@ ggplot(cd_race) +
     labels = percent_format(accuracy = 1)) +
   facet_wrap(~ race) +
   theme_map() +
-  labs(caption = "Map Source: http://dkel.ec/map. Race Data: ACS 2018, obtained through tidycensus. Blank CDs are locations where ACS did not report due to small samples.") +
+  labs(caption = "Map Source: http://dkel.ec/map. Race Data: ACS 2014-2018, obtained through tidycensus.") +
   theme(legend.position = c(0.75, 0.1))
+```
+
+```{r, echo =FALSE}
+# Blank CDs are locations where ACS did not report due to small samples.
 ```
 
