@@ -13,4 +13,7 @@ race_by_cd
 \description{
 Counts and fractions of race by congressional district
 }
+\author{
+5-Year American Community Survey, 2014-2018
+}
 \keyword{datasets}
