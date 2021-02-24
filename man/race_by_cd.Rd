@@ -5,7 +5,7 @@
 \alias{race_by_cd}
 \title{Counts and fractions of race by congressional district}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2180 rows and 5 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2195 rows and 5 columns.
 }
 \usage{
 race_by_cd

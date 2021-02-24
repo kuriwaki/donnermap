@@ -1,5 +1,10 @@
 #' Congressional District Cartogram Shapefile
 #'
+#' @details These shape files are directly downloaded from Daily Kos
+#'  in the link <http://dkel.ec/map>. It additionally adds minimal
+#'  formatting of the coordinate system to render properly in R's
+#'  sf.
+#'
 #' @author Daniel Donner <http://dkel.ec/map>
 #' @examples
 #' library(ggplot2)

@@ -13,6 +13,12 @@ cd_shp
 \description{
 Congressional District Cartogram Shapefile
 }
+\details{
+These shape files are directly downloaded from Daily Kos
+in the link \url{http://dkel.ec/map}. It additionally adds minimal
+formatting of the coordinate system to render properly in R's
+sf.
+}
 \examples{
 library(ggplot2)
 library(ggthemes)

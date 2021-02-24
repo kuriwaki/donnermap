@@ -6,12 +6,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of donnermap is to quickly plot data visualizations involving
-states and congressional districts. Districts are drawn roughly
-proportional to the number of seats they have in the US Congress. This
-is beneficial for some visualizations where geographic maps will obscure
-densely populated areas such as New York City, Los Angeles, Miami, and
-Houston.
+The goal of `donnermap` is to quickly plot data visualizations involving
+states and congressional districts.
+
+It uses the Daily Kos Election (<http://dkel.ec/map>) 2.0 Congressional
+District Map, where districts are drawn roughly proportional to the
+number of seats they have in the US Congress. This is beneficial for
+some visualizations where traditional maps will obscure densely
+populated areas such as New York City, Los Angeles, Miami, and Houston.
 
 The package is named after Daniel Donner, who made this map. A
 discussion of the map can be found
@@ -37,8 +39,13 @@ library(dplyr)
 library(scales)
 ```
 
+The objects `cd_shp` (and `st_shp`, for states) is a `sf`-class R object
+that includes the Daily Kos Elections cartogram as its geometry. It can
+be easily plotted with `geom_sf()`.
+
 ``` r
-ggplot(cd_shp) + geom_sf() + theme_map()
+ggplot(cd_shp) + geom_sf() + theme_map() +
+  labs(caption = "Map Source: http://dkel.ec/map")
 ```
 
 <img src="man/figures/README-base_map-1.png" width="100%" />
@@ -61,7 +68,7 @@ ggplot(cd_race) +
     labels = percent_format(accuracy = 1)) +
   facet_wrap(~ race) +
   theme_map() +
-  labs(caption = "Map Source: http://dkel.ec/map. Race Data: ACS 2014-2018, obtained through tidycensus.") +
+  labs(caption = "Map Source: http://dkel.ec/map. Race Data: ACS 2014-2018, obtained through Kyle Walker's tidycensus.") +
   theme(legend.position = c(0.75, 0.1))
 ```
 

@@ -3,14 +3,16 @@ Title: Congressional District Cartograms from Daily Kos
 Version: 0.0.2
 Authors@R: 
     c(person(given = "Shiro",
-           family = "Kuriwaki",
-           role = c("aut", "cre"),
-           email = "shirokuriwaki@gmail.com",
-           comment = c(ORCID = "0000-0002-5687-2647")),
+             family = "Kuriwaki",
+             role = c("aut", "cre"),
+             email = "shirokuriwaki@gmail.com",
+             comment = c(ORCID = "0000-0002-5687-2647")),
       person(given = "Daniel",
-           family = "Donner",
-           role = "dtc"))
-Description: Create sf and ggplot cartograms from Daniel Donner's CD shapefiles.
+             family = "Donner",
+             role = "dtc"),
+      person(given = "Daily Kos Elections",
+             role = "dtc"))
+Description: Create sf and ggplot cartograms from Daily Kos' CD shapefiles.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
