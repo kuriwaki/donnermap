@@ -13,6 +13,18 @@ race_by_cd
 \description{
 Counts and fractions of race by congressional district
 }
+\details{
+Counts are taken from the 5-year ACS.
+ACS codes used are \code{"B01001_001"} for Total VAP population,
+\code{"B01001H_001"} for Non-Hispanic White,
+\code{"B01001B_001"} for Black,
+\code{"B01001I_001"} for Hispanic,
+\code{"B01001D_001"} for Asian, and
+\code{"B01001C_001"} for American Indian.
+}
+\seealso{
+\url{https://www.shirokuriwaki.com/ccesMRPprep/reference/get_acs_cces.html}
+}
 \author{
 5-Year American Community Survey, 2014-2018
 }
