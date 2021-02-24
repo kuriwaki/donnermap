@@ -19,9 +19,11 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of donnermap is to ...
+The goal of donnermap is to quickly plot data visualizations involving states and congressional districts. Districts are drawn roughly proportional to the number of seats they have in the US Congress. This is beneficial for some visualizations where geographic maps will obscure densely populated areas such as New York City, Los Angeles, Miami, and Houston.
 
-And the development version from [GitHub](https://github.com/) with:
+The package is named after Daniel Donner, who made this map. A discussion of the map can be found [here](https://medium.com/nightingale/hexes-tiles-and-districts-757a0506329f).
+
+The development version can be installed from this repository with:
 
 ``` r
 # install.packages("devtools")
