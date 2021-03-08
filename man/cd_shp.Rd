@@ -3,21 +3,27 @@
 \docType{data}
 \name{cd_shp}
 \alias{cd_shp}
-\title{Congressional District Cartogram Shapefile}
+\title{Congressional District (116th) Cartogram Shapefile}
 \format{
-An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 435 rows and 6 columns.
+\describe{
+\item{cd}{District code. The formatting corresponds to the CCES cumulative
+coding of \code{cd}: a two-letter abbreviation for the state followed by
+a dash, and the district number padded with zeros to the left to be of length
+2. At-large districts like Delaware are given a "-01" for the district number.}
+\item{geometry}{The simple features (sf) column that wil be used for mapping}
+}
 }
 \usage{
 cd_shp
 }
 \description{
-Congressional District Cartogram Shapefile
+Congressional District (116th) Cartogram Shapefile
 }
 \details{
 These shape files are directly downloaded from Daily Kos
 in the link \url{http://dkel.ec/map}. It additionally adds minimal
 formatting of the coordinate system to render properly in R's
-sf.
+\code{sf}.
 }
 \examples{
 library(ggplot2)
