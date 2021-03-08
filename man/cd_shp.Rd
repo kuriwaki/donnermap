@@ -5,6 +5,8 @@
 \alias{cd_shp}
 \title{Congressional District (116th) Cartogram Shapefile}
 \format{
+A dataframe with 435 rows and 6 variables,
+including:
 \describe{
 \item{cd}{District code. The formatting corresponds to the CCES cumulative
 coding of \code{cd}: a two-letter abbreviation for the state followed by

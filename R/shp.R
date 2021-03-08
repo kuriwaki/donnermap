@@ -5,7 +5,8 @@
 #'  formatting of the coordinate system to render properly in R's
 #'  `sf`.
 #'
-#' @format
+#' @format A dataframe with `r nrow(cd_shp)` rows and `r ncol(cd_shp)` variables,
+#' including:
 #'  \describe{
 #'  \item{cd}{District code. The formatting corresponds to the CCES cumulative
 #'    coding of \code{cd}: a two-letter abbreviation for the state followed by
